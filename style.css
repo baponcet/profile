@@ -1,11 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Roboto:wght@400;700;900&display=swap');
 
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+video {
+  /** Simulationg background-size: cover */
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.video-wrapper {
+  /* Telling our absolute positioned video to
+  be relative to this element */
+  position: relative;
+
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  /* Will not allow the video to overflow the
+  container */
+  overflow: hidden;
+
+  /* Centering the container's content vertically
+  and horizontally */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
-  background-image: url(images/pexels-johannes-plenio-1103970.jpg);
-  background-size: cover;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: normal;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2 {
